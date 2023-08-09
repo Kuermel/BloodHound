@@ -84,6 +84,15 @@
         }
     },
     "/api/v2/file-upload/{file_upload_id}": {
+        "parameters": [
+            {
+                "type": "string",
+                "description": "File Object ID",
+                "name": "file_upload_id",
+                "in": "path",
+                "required": true
+            }
+        ],
         "post": {
             "description": "Saves a collection file to a file upload job",
             "tags": [
@@ -135,6 +144,15 @@
         }
     },
     "/api/v2/file-upload/{file_upload_id}/end": {
+        "parameters": [
+            {
+                "type": "string",
+                "description": "File Object ID",
+                "name": "file_upload_id",
+                "in": "path",
+                "required": true
+            }
+        ],
         "post": {
             "description": "End a file upload job",
             "tags": [
